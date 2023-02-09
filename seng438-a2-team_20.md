@@ -26,6 +26,7 @@ For the Range and DataUtilities class we will be using both Boundary Value Testi
 We will be using the above strategies for the following methods in the Range class:
 
 | **Method** | **Implementation** |
+| -------------- | --- |
 | getLowerBound() | text |
 | getUpperBound() | text |
 | getLength() | text |
