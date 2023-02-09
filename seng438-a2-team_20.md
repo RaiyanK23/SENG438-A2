@@ -21,8 +21,6 @@ The first black box technique that will be used is **boundary value testing**. T
 
 The second black box techique that will be used is **equivalence class testing**. This technique was designed to test method inputs that exhibit similar behavior to ensure the program is tested for different combination of inputs. We will divide input into partitions that would be considered similar. Furthermore, we will establish a unique equivalence class that groups together similar inputs for each test case. 
 
-For the Range and DataUtilities class we will be using both Boundary Value Testing and Equivalence Class Testing to test the following methods:
-
 We will be using the above strategies for the following methods in the Range class:
 
 | **Method** | **Implementation** |
@@ -32,6 +30,16 @@ We will be using the above strategies for the following methods in the Range cla
 | getLength() | For this method we used the equivalence class technique. First we divided the inputs into different range objects. Included in these range objects were positive ranges, negative ranges, ranges with equal lower and upper bounds, ranges with larger negative lower bounds and large upper bounds and lastly ranges with a small difference between lower and upper bounds. We then used assertEquals to determine whether the expected length matched the actual length returned by the getLength() method, which would be show whether the test passed or failed. |
 | getCentralValue() | to be written |
 | contains() | We will use both boundary value testing and equivalence class testing for this method. First we will divide the inputs into equivalence classes into a class that represents the value within range, another class that represents values below the lower rangeboundary and a last class that represents the values above the upper range boundary. Then we will test the inputs equal to the lower bound of the range, inputs close to the lower bound, inputs equal to the upper bound of the range and inputs close to the upper bound. Using the assertEquals method to will help determine if the test passed or failed based on whether the input value was within the specified range object or not. |
+
+We will also be using our listed black box techniques for the following methods in the DataUtilities class:
+
+| **Method** | **Implementation** |
+| -------------- | --- |
+| calculateColumnTotal() | TBD |
+| calculateRowTotal() | TBD |
+| createNumberArray() | TBD |
+| createNumberArray2D() | TBD |
+| getCumulativePercentages() | TBD |
 
 // including the input partitions you have designed
 
