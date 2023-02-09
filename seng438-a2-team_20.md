@@ -27,7 +27,7 @@ We will be using the above strategies for the following methods in the Range cla
 
 | **Method** | **Implementation** |
 | -------------- | --- |
-| getLowerBound() | For each getter, we look at the boundary values of their respective member variable in the Range class. With respect to the equivalence class technique, we divide the inputs into different range objects: positive lower bounds, negative lower bounds, and special values for lower rounds (i.e positive infinity, negative infinity, and NaN). With respect to the boundary value technique, the boundary values for the positive and negative lower bound equivalence values would be the maximum and minimum allowed value for a double.|
+| getLowerBound() | For each getter, we look at the boundary values of their respective member variable in the Range class. With respect to the equivalence class technique, we divide the inputs into different range objects: positive lower bounds, negative lower bounds, and special values for lower rounds (i.e positive infinity, negative infinity, and NaN). With respect to the boundary value technique, the boundary values for the positive and negative lower bound equivalence values would be the maximum and minimum allowed value for a double. This is not applicable to the special values equivalence class.|
 | getUpperBound() | We follow a similar strategy as per getLowerBound(). |
 | getLength() | text |
 | getCentralValue() | text |
