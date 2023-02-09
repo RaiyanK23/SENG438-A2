@@ -27,7 +27,7 @@ We will be using the above strategies for the following methods in the Range cla
 
 | **Method** | **Implementation** |
 | -------------- | --- |
-| getLowerBound() | text |
+| getLowerBound() | For each getter, we look at the boundary values of their respective member variable in the Range class. So with the lower (and upper) bound being doubles, we consider the minimum and maximum values of a double. |
 | getUpperBound() | text |
 | getLength() | text |
 | getCentralValue() | text |
