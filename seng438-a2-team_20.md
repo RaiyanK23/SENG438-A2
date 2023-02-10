@@ -2,12 +2,12 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \#:      |     |
+| Group \#:  20    |     |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Mohammed|     |
+| Jacob               |     |
+| Markosch               |     |
+| Kundai               |     |
 
 # 1 Introduction
 
@@ -16,6 +16,13 @@ Text…
 # 2 Detailed description of unit test strategy
 
 // including the input partitions you have designed
+
+getLowerBound()
+Test Case ID    LowerBound      UpperBound      Output
+1               3               6               3
+2
+3
+4
 
 # 3 Test cases developed
 
