@@ -3,8 +3,10 @@
     getLowerBoundTest.class,
     getUpperBoundTest.class,
     getLengthTest.class,
-    UtilitiesRowCountTest.class,
+    RangeGetCentralValueTest.class,
+    ContainsTest.class,
     ColumnTotalTest.class,
+    UtilitiesRowCountTest.class,
     NumberArrayTest.class,
     NumberArray2DTest.class,
     UtilitiesCumulativePercentTest.class
