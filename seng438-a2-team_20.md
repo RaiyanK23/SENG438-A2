@@ -50,6 +50,7 @@ the source code method // they test. identify which tests cover which partitions
 you have explained in the test strategy section //above
 
 **Range Class**
+
 getCentralValue()
 
 Test written for ranges in which the bounds were both positive values. (+,+)
