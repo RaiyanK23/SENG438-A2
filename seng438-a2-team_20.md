@@ -88,6 +88,38 @@ Contains()
 * Test written for when input is lesser than lower bound value.
 * Test written for when input is greater than upper bound value.
 
+**Utilities Class**
+
+calculateColumnTotal()
+
+* Test written for when .
+* Test written for when .
+* Test written for when .
+
+calculateRowTotal()
+
+* Test written for when .
+* Test written for when .
+* Test written for when .
+
+createNumberArray()
+
+* Test written for when .
+* Test written for when .
+* Test written for when .
+
+createNumberArray2D()
+
+* Test written for when .
+* Test written for when .
+* Test written for when .
+
+getCumulativePercentages()
+
+* Test written for when .
+* Test written for when .
+* Test written for when .
+
 # 4 How the team work/effort was divided and managed
 
 Each member of the team had to set up the Eclipse IDE individually for this lab so tests were developed independently. Afterwards we met over discord to formulate the testing plan we would carry out. We then had to decide how to split the 5 methods we 
