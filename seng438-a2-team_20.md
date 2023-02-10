@@ -4,10 +4,10 @@
 
 | Group 20:      |
 | -------------- |
-| Jacob Adeyemo (30046186)|
-| Markosch "Godwin" Saure (30088690)|     
-| Kundai Dziwa (30090173)| 
-|                | 
+| Jacob Adeyemo (30046186) |
+| Markosch "Godwin" Saure (30088690) |     
+| Kundai Dziwa (30090173) | 
+| Mohammed Kabir () | 
 
 # 1 Introduction
 
@@ -36,10 +36,10 @@ We will also be using our listed black box techniques for the following methods 
 | **Method** | **Implementation** |
 | -------------- | --- |
 | calculateColumnTotal() | For this method, we check some cases where the inputs are valid and invalid. For example, one test case is where we pass an invalid object value and check for an illegal argument exception, we consider this a boundary condition as it is not as likely to happen. On the other hand, we have tests for an input of one and an input of multiple values. Each of these test methods only have one assert for better focus and clarity. Furthermore, we use mocks to create a mock for the Values2D class such that we can fix the return values to be what we want them to be.|
-| calculateRowTotal() | Text... |
+| calculateRowTotal() | For this method, we plan to check cases where the inputs are valid but may produce incorrect results inorder to detect bugs within the method. The use of mocks and mock objects of the Values2D class allow us to properly fix the values that we want and know the output of. Then when we right the tests we can understand properly if there is a bug within the class causing the wrong outputs. As an example, we will use a mock object to create a certain number of rows and input the values we know the total should be. With that information we can assert the value that is calculated and what it should be. |
 | createNumberArray() | For this method, we are similarly following the formula in our test plan to have some inputs of equivalence classes as well as boundary conditions. The createNumberArray() method does not necessarily require mocking as we are not passing an object of a class for the input. As such, we do a simple check for an invalid input (null or missing data) and check that it throws the exception that we expect it to as a boundary condition. Then we create some equivalence classes and make various sized arrays and test that the Number array created is essentially the double array that we passed into it by using asserEquals().|
 | createNumberArray2D() | For this method, we are similarly following the formula in our test plan to have some inputs of equivalence classes as well as boundary conditions. The createNumberArray() method does not necessarily require mocking as we are not passing an object of a class for the input. As such, we do a simple check for an invalid input (null or missing data) and check that it throws the exception that we expect it to as a boundary condition. Then we create some equivalence classes and make various sized arrays and test that the Number array created is essentially the double array that we passed into it by using asserEquals().| 
-| getCumulativePercentages() | Text... |
+| getCumulativePercentages() | Here, we will closely follow the previously mentioned processes of testing the following method. For this method in particular we will find bugs in the code through using mock objects and inputted values, but also the we will test the method to see how invalid inputs outside of the boundary are handled. As an example, we check for negative values within the KeyedValues object. Also, we will input valid key value pairs that produce a known output to test for the possible bugs within the class method. |
 
 // including the input partitions you have designed
 
@@ -97,11 +97,6 @@ selected to test from the Range class in addition to the 5 methods in the DataUt
 
 Everyone in the team was not familiar with using Eclipse for JUnit testing so we had to become familair with the IDE and it's layout. Even though the assignment document provided a really detailed description it was still a learning curve that we had to get over. In conducting the actual lab, writing test cases for the Range Class was fairly smooth but we had trouble determining tests for the DataUtilities class. This was partly due to our knowledge about mocking and using the JMock framework and trying to avoid redundant test cases. However, through reviewing the assignment document thoroughly and reading documentation provided online we were able to successfully create tests for the class. The whole team benefitted from running into these challenges beacuse we were able to become accustomed to using Eclipse for Junit testing and creating mock objects to conduct more reliable and efficient tests.
 
-Text…
-
 # 6 Comments/feedback on the lab itself
 
 The lab was a great learning experience for the team overall. The assignment was very detailed and minimized the the time used to set up our testing environment. The fact we were able to choose methods we wanted to test was also very practical as we choose the methods we felt would provide us the best opportunity to gain a better understanding of testing. Even though we are not JUnit experts currently, this lab has definitely brought us closer to that. 
-
-
-Text…
