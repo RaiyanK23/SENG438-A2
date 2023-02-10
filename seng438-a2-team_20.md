@@ -2,12 +2,12 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-| Jacob Adeyemo  |30046186     |
-|                |     |
-|                |     |
+| Group 20:      |
+| -------------- |
+| Jacob Adeyemo (30046186) |
+| Markosch Saure (30088690) |     
+|                | 
+|                | 
 
 # 1 Introduction
 
