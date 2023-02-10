@@ -79,10 +79,10 @@ getLowerBound()
 getUpperBound()
 
 * Test written for when the upper bound is the maximum value of a double (max_value, max_value)
-* Test written for when the upper bound is the minimum value of a double (-max_value, 0)
+* Test written for when the upper bound is the minimum value of a double (-max_value, -max_value)
 * Test written for when the upper bound is positive infinity (+ve_infty, +ve_infty)
-* Test written for when the upper bound is negative infinity (-ve_infty, 0)
-* Test written for when the upper bound is NaN (NaN, 0)
+* Test written for when the upper bound is negative infinity (-ve_infty, -ve_infty)
+* Test written for when the upper bound is NaN (0, NaN)
 
 getCentralValue()
 
@@ -98,9 +98,6 @@ Contains()
 * Test written for when input is within the range. 
 * Test written for when input is lesser than lower bound value.
 * Test written for when input is greater than upper bound value.
-
-
-
 
 # 4 How the team work/effort was divided and managed
 
