@@ -2,12 +2,12 @@
 
 **Lab. Report \#2 – Requirements-Based Test Generation**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Group 20:      |
+| -------------- |
+| Jacob Adeyemo (30046186) |
+| Markosch Saure (30088690) |     
+|                | 
+|                | 
 
 # 1 Introduction
 
@@ -27,9 +27,9 @@ We will be using the above strategies for the following methods in the Range cla
 | -------------- | --- |
 | getLowerBound() | For a getter, we look at the boundary values of its respective member variable in the Range class. Using the equivalence class technique, we divide the inputs into different range objects: positive lower bounds, negative lower bounds, and special values for lower rounds (i.e positive infinity, negative infinity, and NaN). With respect to the boundary value technique, the boundary values for the positive and negative lower bound equivalence values would be the maximum and minimum allowed value for a double. This is not applicable to the special values equivalence class.|
 | getUpperBound() | We follow a similar strategy to getLowerBound() but with respect to the upper bound member variable. |
-| getLength() | For this method we used the equivalence class technique. First we divided the inputs into different range objects. Included in these range objects were positive ranges, negative ranges, ranges with equal lower and upper bounds, ranges with larger negative lower bounds and large upper bounds and lastly ranges with a small difference between lower and upper bounds. We then used assertEquals to determine whether the expected length matched the actual length returned by the getLength() method, which would be show whether the test passed or failed. |
-| getCentralValue() | Equivalence testing will be used to for this method. The inputs were divided into different range objects. The objects will be tested with different lower and upper bounds, including postive and negative ranges, ranges with equal upper and lower bounds and ranges with large or small differences between the upper and lower bounds. After that we will use assertEquals to conclude if the test passed/failed based on whether the expected value matched the actual central values |
-| contains() | We will use both boundary value testing and equivalence class testing for this method. First we will divide the inputs into equivalence classes into a class that represents the value within range, another class that represents values below the lower rangeboundary and a last class that represents the values above the upper range boundary. Then we will test the inputs equal to the lower bound of the range, inputs close to the lower bound, inputs equal to the upper bound of the range and inputs close to the upper bound. Using the assertEquals method to will help determine if the test passed or failed based on whether the input value was within the specified range object or not. |
+| getLength() | Using the equivalence class technique, we divide the inputs into different range objects with respect to possible lengths: positive ranges, negative ranges, and ranges with equal lower and upper bounds (i.e. zero length). Via the boundary value technoque, the boundary values for the positive and negative range equivalence values would the maximum and minimum allowed value for a double. This is not applicable to the zero length equivalence class. We then used assertEquals to determine whether the expected length matched the actual length returned by the getLength() method, which would be show whether the test passed or failed. |
+| getCentralValue() | Equivalence testing will be used to for this method. The inputs were divided into different range objects. The objects will be tested with different lower and upper bounds, including postive and negative ranges, and ranges with equal upper and lower bounds(i.e two zeros). After that we will use assertEquals to conclude if the test passed/failed based on whether the expected value matched the actual central values |
+| contains() | We will use both boundary value testing and equivalence class testing for this method. First we will divide the inputs into equivalence classes into a class that represents the value within range, another class that represents values below the lower range boundary and a last class that represents the values above the upper range boundary. Then we will test the inputs equal to the lower bound of the range, inputs close to the lower bound, inputs equal to the upper bound of the range and inputs close to the upper bound. Using the assertEquals method to will help determine if the test passed or failed based on whether the input value was within the specified range object or not. |
 
 We will also be using our listed black box techniques for the following methods in the DataUtilities class:
 
@@ -62,20 +62,44 @@ and test that the Number array created is essentially the double array that we p
 
 # 3 Test cases developed
 
-Text…
-
 // write down the name of the test methods and classes. Organize the based on
 the source code method // they test. identify which tests cover which partitions
 you have explained in the test strategy section //above
 
+**Range Class**
+
+getCentralValue()
+
+* Test written for ranges in which the bounds were both positive values. (+,+)
+* Test written for ranges in which the bounds were both negative values. (-,-)
+* Test written for ranges where both bounds are zero (0,0)
+* Test written for ranges with mixed sign values. (+,-||-,+)
+
+Contains()
+
+* Test written for when input is equal to lower bound range value.
+* Test written for when input is equal to upper bound range value.
+* Test written for when input is within the range. 
+* Test written for when input is lesser than lower bound value.
+* Test written for when input is greater than upper bound value.
+
+
+
+
 # 4 How the team work/effort was divided and managed
 
-Text…
+Each member of the team had to set up the Eclipse IDE individually for this lab so tests were developed independently. Afterwards we met over discord to formulate the testing plan we would carry out. We then had to decide how to split the 5 methods we 
+selected to test from the Range class in addition to the 5 methods in the DataUtilities class which was already provided to us. Two members of the team had 3 methods they would write test cases for and the other two members took care of the 2 methods each. Upon completion we pushed the tests unto our repository and reviewed each others tests. The lab report was then completed together as team. 
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
+
+Everyone in the team was not familiar with using Eclipse for JUnit testing so we had to become familair with the IDE and it's layout. Even though the assignment document provided a really detailed description it was still a learning curve that we had to get over. In conducting the actual lab, writing test cases for the Range Class was fairly smooth but we had trouble determining tests for the DataUtilities class. This was partly due to our knowledge about mocking and using the JMock framework and trying to avoid redundant test cases. However, through reviewing the assignment document thoroughly and reading documentation provided online we were able to successfully create tests for the class. The whole team benefitted from running into these challenges beacuse we were able to become accustomed to using Eclipse for Junit testing and creating mock objects to conduct more reliable and efficient tests.
 
 Text…
 
 # 6 Comments/feedback on the lab itself
+
+The lab was a great learning experience for the team overall. The assignment was very detailed and minimized the the time used to set up our testing environment. The fact we were able to choose methods we wanted to test was also very practical as we choose the methods we felt would provide us the best opportunity to gain a better understanding of testing. Even though we are not JUnit experts currently, this lab has definitely brought us closer to that. 
+
 
 Text…
