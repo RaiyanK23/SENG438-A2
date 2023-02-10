@@ -68,6 +68,22 @@ you have explained in the test strategy section //above
 
 **Range Class**
 
+getLowerBound()
+
+* Test written for when the lower bound is the maximum value of a double (max_value, max_value)
+* Test written for when the lower bound is the minimum value of a double (-max_value, 0)
+* Test written for when the lower bound is positive infinity (+ve_infty, +ve_infty)
+* Test written for when the lower bound is negative infinity (-ve_infty, 0)
+* Test written for when the lower bound is NaN (NaN, 0)
+
+getUpperBound()
+
+* Test written for when the upper bound is the maximum value of a double (max_value, max_value)
+* Test written for when the upper bound is the minimum value of a double (-max_value, 0)
+* Test written for when the upper bound is positive infinity (+ve_infty, +ve_infty)
+* Test written for when the upper bound is negative infinity (-ve_infty, 0)
+* Test written for when the upper bound is NaN (NaN, 0)
+
 getCentralValue()
 
 * Test written for ranges in which the bounds were both positive values. (+,+)
