@@ -20,8 +20,8 @@ public class UtilitiesRowCountTest extends DataUtilities {
     }
 
 
-    @Test
-    public void calculateRowTotalForTwoValues() {
+    @Test // bug found!
+    public void testCalculateRowTotalForTwoValues() {
     	mockingContext.checking(new Expectations() {
             {
                 one(values).getColumnCount();
@@ -33,11 +33,11 @@ public class UtilitiesRowCountTest extends DataUtilities {
             }
         });
         double result = DataUtilities.calculateRowTotal(values, 0);
-        assertEquals(result, 10.0, .000000001d);
+        assertEquals(result, 7.5, .000000001d);
     }
     
     @Test
-    public void calculateRowTotalForNoColumns() {
+    public void testCalculateRowTotalForNoColumns() {
     	mockingContext.checking(new Expectations() {
             {
                 one(values).getColumnCount();
@@ -48,12 +48,12 @@ public class UtilitiesRowCountTest extends DataUtilities {
         assertEquals(result, 0, .000000001d);
     }
     
-    @Test
-    public void calculateRowNegativeTotalFourValues() {
+    @Test // bug found!
+    public void testCalculateRowNegativeTotalFourValues() {
     	mockingContext.checking(new Expectations() {
             {
                 one(values).getColumnCount();
-                will(returnValue(4));
+                will(returnValue(5));
                 one(values).getValue(0, 0);
                 will(returnValue(-6));
                 one(values).getValue(0, 1);

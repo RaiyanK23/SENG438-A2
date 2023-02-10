@@ -20,43 +20,68 @@ public class UtilitiesCumulativePercentTest extends DataUtilities {
     }
 
 
-    @Test
-    public void cumulativePercentageForThreeKeys() {
+    @Test // bug found!
+    public void testCumulativePercentageForThreeKeys() {
     	mockingContext.checking(new Expectations() {
             {
-                one(values).getKey(0);
-                will(returnValue(0));
-                one(values).getValue(0);
-                will(returnValue(5));
-                one(values).getKey(1);
+            	allowing(values).getItemCount();
+            	will(returnValue(3));
+                allowing(values).getKey(0);
                 will(returnValue(1));
-                one(values).getValue(1);
-                will(returnValue(9));
-                one(values).getKey(2);
+                allowing(values).getValue(0);
                 will(returnValue(2));
-                one(values).getValue(2);
+                allowing(values).getKey(1);
+                will(returnValue(2));
+                allowing(values).getValue(1);
+                will(returnValue(2));
+                allowing(values).getKey(2);
+                will(returnValue(3));
+                allowing(values).getValue(2);
                 will(returnValue(2));
             }
         });
          KeyedValues result = DataUtilities.getCumulativePercentages(values);
-        assertEquals(result.getValue(0).doubleValue(), 0.3125, .000000001d);
+        assertEquals(result.getValue(0).doubleValue(), 0.5, .000000001d);
     }
     
-    @Test
-    public void cumulativePositivePercentageForTwoKeys() {
+    @Test // bug found!
+    public void testCumulativePercentageForTwoNegativeKeys() {
     	mockingContext.checking(new Expectations() {
             {
-            	one(values).getKeys();
-                one(values).getKey(0);
+            	allowing(values).getItemCount();
+            	will(returnValue(2));
+            	allowing(values).getKey(0);
                 will(returnValue(0));
-                one(values).getKey(1);
+                allowing(values).getValue(0);
                 will(returnValue(-10));
-                one(values).getKey(2);
-                will(returnValue(-4));
+                allowing(values).getKey(1);
+                will(returnValue(1));
+                allowing(values).getValue(1);
+                will(returnValue(-2));
             }
         });
         KeyedValues result = DataUtilities.getCumulativePercentages(values);
-        assertEquals(result.getValue(1).doubleValue(), 1, .000000001d);
+        assertEquals(result.getValue(1).doubleValue(), 6.0, .000000001d);
+    }
+    
+    @Test // No bugs found
+    public void testCumulativePercentageForNoKeys() {
+    	mockingContext.checking(new Expectations() {
+            {
+            	allowing(values).getItemCount();
+            	will(returnValue(0));
+            	allowing(values).getKey(0);
+                will(returnValue(0));
+                allowing(values).getValue(1);
+                will(returnValue(4));
+                allowing(values).getKey(1);
+                will(returnValue(1));
+                allowing(values).getValue(1);
+                will(returnValue(5));
+            }
+        });
+        KeyedValues result = DataUtilities.getCumulativePercentages(values);
+        assertEquals(result.getItemCount(), 0, .000000001d);
     }
     
     @After
