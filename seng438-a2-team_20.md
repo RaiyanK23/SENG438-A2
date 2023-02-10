@@ -5,7 +5,7 @@
 | Group 20:      |
 | -------------- |
 | Jacob Adeyemo (30046186) |
-| Markosch Saure (30088690) |     
+| Markosch "Godwin" Saure (30088690) |     
 |                | 
 |                | 
 
