@@ -35,24 +35,10 @@ We will also be using our listed black box techniques for the following methods 
 
 | **Method** | **Implementation** |
 | -------------- | --- |
-| calculateColumnTotal() | For this method, we check some cases where the inputs are valid and invalid. For example, one test case is where we pass
-an invalid object value and check for an illegal argument exception, we consider this a boundary condition as it is not as
-likely to happen. On the other hand, we have tests for an input of one and an input of multiple values. Each of these test methods only have one assert for better focus and clarity. Furthermore, we use mocks to create a mock for the Values2D class
-such that we can fix the return values to be what we want them to be.|
-
+| calculateColumnTotal() | For this method, we check some cases where the inputs are valid and invalid. For example, one test case is where we pass an invalid object value and check for an illegal argument exception, we consider this a boundary condition as it is not as likely to happen. On the other hand, we have tests for an input of one and an input of multiple values. Each of these test methods only have one assert for better focus and clarity. Furthermore, we use mocks to create a mock for the Values2D class such that we can fix the return values to be what we want them to be.|
 | calculateRowTotal() | Text... |
-
-| createNumberArray() | For this method, we are similarly following the formula in our test plan to have some inputs of equivalence classes as well as
-boundary conditions. The createNumberArray() method does not necessarily require mocking as we are not passing an object of a 
-class for the input. As such, we do a simple check for an invalid input (null or missing data) and check that it throws the exception that we expect it to as a boundary condition. Then we create some equivalence classes and make various sized arrays
-and test that the Number array created is essentially the double array that we passed into it by using asserEquals().|
-
-
-| createNumberArray2D() | For this method, we are similarly following the formula in our test plan to have some inputs of equivalence classes as well as
-boundary conditions. The createNumberArray() method does not necessarily require mocking as we are not passing an object of a 
-class for the input. As such, we do a simple check for an invalid input (null or missing data) and check that it throws the exception that we expect it to as a boundary condition. Then we create some equivalence classes and make various sized arrays
-and test that the Number array created is essentially the double array that we passed into it by using asserEquals().| 
-
+| createNumberArray() | For this method, we are similarly following the formula in our test plan to have some inputs of equivalence classes as well as boundary conditions. The createNumberArray() method does not necessarily require mocking as we are not passing an object of a class for the input. As such, we do a simple check for an invalid input (null or missing data) and check that it throws the exception that we expect it to as a boundary condition. Then we create some equivalence classes and make various sized arrays and test that the Number array created is essentially the double array that we passed into it by using asserEquals().|
+| createNumberArray2D() | For this method, we are similarly following the formula in our test plan to have some inputs of equivalence classes as well as boundary conditions. The createNumberArray() method does not necessarily require mocking as we are not passing an object of a class for the input. As such, we do a simple check for an invalid input (null or missing data) and check that it throws the exception that we expect it to as a boundary condition. Then we create some equivalence classes and make various sized arrays and test that the Number array created is essentially the double array that we passed into it by using asserEquals().| 
 | getCumulativePercentages() | Text... |
 
 // including the input partitions you have designed
