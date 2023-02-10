@@ -17,10 +17,10 @@ public class getUpperBoundTest {
     public void setUp() throws Exception {
     	System.out.println("Setting up...");
     	maxUpperRange = new Range(Double.MAX_VALUE, Double.MAX_VALUE);
-    	minUpperRange = new Range(-Double.MAX_VALUE, 0);
+    	minUpperRange = new Range(-Double.MAX_VALUE, -Double.MAX_VALUE);
     	maxInfUpperRange = new Range(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);
-    	minInfUpperRange = new Range(Double.NEGATIVE_INFINITY, 0);
-    	nanUpperRange = new Range(Double.NaN, 0);
+    	minInfUpperRange = new Range(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY);
+    	nanUpperRange = new Range(0, Double.NaN);
     }
 
 	@Test
@@ -59,6 +59,9 @@ public class getUpperBoundTest {
     			Double.NaN,
     			maxUpperRange.getUpperBound(),
     			.000000001d);
+    	
+    	/*boolean isNan = Double.isNaN(maxUpperRange.getUpperBound());
+    	assertTrue("The getter should have returned NaN", isNan);*/
     }
     
     @After
