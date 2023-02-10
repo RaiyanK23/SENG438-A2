@@ -84,6 +84,12 @@ getUpperBound()
 * Test written for when the upper bound is negative infinity (-ve_infty, -ve_infty)
 * Test written for when the upper bound is NaN (0, NaN)
 
+getLength()
+
+* Test written for ranges in which the length should be positive (0, max_value)
+* Test written for ranges in which the length should be negative (-max_value, 0)
+* Test written for ranges in which the length should be 0 (0, 0)
+
 getCentralValue()
 
 * Test written for ranges in which the bounds were both positive values. (+,+)
