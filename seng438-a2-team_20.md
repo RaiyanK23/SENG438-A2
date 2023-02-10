@@ -35,7 +35,7 @@ We will also be using our listed black box techniques for the following methods 
 
 | **Method** | **Implementation** |
 | -------------- | --- |
-| calculateColumnTotal() | TBD |
+| calculateColumnTotal() | |
 | calculateRowTotal() | TBD |
 | createNumberArray() | TBD |
 | createNumberArray2D() | TBD |
