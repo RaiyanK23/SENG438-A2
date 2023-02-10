@@ -53,18 +53,18 @@ you have explained in the test strategy section //above
 
 getCentralValue()
 
-Test written for ranges in which the bounds were both positive values. (+,+)
-Test written for ranges in which the bounds were both negative values. (-,-)
-Test written for ranges where both bounds are zero (0,0)
-Test written for ranges with mixed sign values. (+,-||-,+)
+* Test written for ranges in which the bounds were both positive values. (+,+)
+* Test written for ranges in which the bounds were both negative values. (-,-)
+* Test written for ranges where both bounds are zero (0,0)
+* Test written for ranges with mixed sign values. (+,-||-,+)
 
 Contains()
 
-Test written for when input is equal to lower bound range value.
-Test written for when input is equal to upper bound range value.
-Test written for when input is within the range. 
-Test written for when input is lesser than lower bound value.
-Test written for when input is greater than upper bound value.
+* Test written for when input is equal to lower bound range value.
+* Test written for when input is equal to upper bound range value.
+* Test written for when input is within the range. 
+* Test written for when input is lesser than lower bound value.
+* Test written for when input is greater than upper bound value.
 
 
 
