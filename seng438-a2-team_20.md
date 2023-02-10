@@ -76,8 +76,13 @@ selected to test from the Range class in addition to the 5 methods in the DataUt
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
+Everyone in the team was not familiar with using Eclipse for JUnit testing so we had to become familair with the IDE and it's layout. Even though the assignment document provided a really detailed description it was still a learning curve that we had to get over. In conducting the actual lab, writing test cases for the Range Class was fairly smooth but we had trouble determining tests for the DataUtilities class. This was partly due to our knowledge about mocking and using the JMock framework and trying to avoid redundant test cases. However, through reviewing the assignment document thoroughly and reading documentation provided online we were able to successfully create tests for the class. The whole team benefitted from running into these challenges beacuse we were able to become accustomed to using Eclipse for Junit testing and creating mock objects to conduct more reliable and efficient tests.
+
 Text…
 
 # 6 Comments/feedback on the lab itself
+
+The lab was a great learning experience for the team overall. The assignment was very detailed and minimized the the time used to set up our testing environment. The fact we were able to choose methods we wanted to test was also very practical as we choose the methods we felt would provide us the best opportunity to gain a better understanding of testing. Even though we are not JUnit experts currently, this lab has definitely brought us closer to that. 
+
 
 Text…
