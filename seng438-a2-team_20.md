@@ -5,7 +5,7 @@
 | Group \#:      |     |
 | -------------- | --- |
 | Student Names: |     |
-|                |     |
+| Jacob Adeyemo  |30046186     |
 |                |     |
 |                |     |
 
@@ -45,15 +45,33 @@ We will also be using our listed black box techniques for the following methods 
 
 # 3 Test cases developed
 
-Text…
-
 // write down the name of the test methods and classes. Organize the based on
 the source code method // they test. identify which tests cover which partitions
 you have explained in the test strategy section //above
 
+**Range Class**
+getCentralValue()
+
+Test written for ranges in which the bounds were both positive values. (+,+)
+Test written for ranges in which the bounds were both negative values. (-,-)
+Test written for ranges where both bounds are zero (0,0)
+Test written for ranges with mixed sign values. (+,-||-,+)
+
+Contains()
+
+Test written for when input is equal to lower bound range value.
+Test written for when input is equal to upper bound range value.
+Test written for when input is within the range. 
+Test written for when input is lesser than lower bound value.
+Test written for when input is greater than upper bound value.
+
+
+
+
 # 4 How the team work/effort was divided and managed
 
-Text…
+Each member of the team had to set up the Eclipse IDE individually for this lab so tests were developed independently. Afterwards we met over discord to formulate the testing plan we would carry out. We then had to decide how to split the 5 methods we 
+selected to test from the Range class in addition to the 5 methods in the DataUtilities class which was already provided to us. Two members of the team had 3 methods they would write test cases for and the other two members took care of the 2 methods each. Upon completion we pushed the tests unto our repository and reviewed each others tests. The lab report was then completed together as team. 
 
 # 5 Difficulties encountered, challenges overcome, and lessons learned
 
