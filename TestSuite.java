@@ -2,7 +2,7 @@
 @Suite.SuiteClasses({
     getLowerBoundTest.class,
     getUpperBoundTest.class,
-    getLength.class,
+    getLengthTest.class,
     UtilitiesRowCountTest.class,
     ColumnTotalTest.class,
     NumberArrayTest.class,
