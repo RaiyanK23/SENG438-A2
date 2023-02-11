@@ -92,33 +92,33 @@ Contains()
 
 calculateColumnTotal()
 
-* Test written for when .
-* Test written for when .
-* Test written for when .
+* Test written for when there a no columns.
+* Test written for when input is invalid.
+* Test written for when input is a column with two values.
 
 calculateRowTotal()
 
-* Test written for when .
-* Test written for when .
-* Test written for when .
+* Test written for when there a no rows.
+* Test written for when input has negative values in the rows.
+* Test written for when input is a column with two values.
 
 createNumberArray()
 
-* Test written for when .
-* Test written for when .
-* Test written for when .
+* Test written for when input is a null value.
+* Test written for when input is a one element 2D array.
+* Test written for when input is a valid 2D array.
 
 createNumberArray2D()
 
-* Test written for when .
-* Test written for when .
-* Test written for when .
+* Test written for when input is a null value.
+* Test written for when input is a one element 2D array.
+* Test written for when input is a valid 2D array.
 
 getCumulativePercentages()
 
-* Test written for when .
-* Test written for when .
-* Test written for when .
+* Test written for when input has three key value pairs with positive values.
+* Test written for when input has two key value pairs with negative values.
+* Test written for when input has no keys.
 
 # 4 How the team work/effort was divided and managed
 
